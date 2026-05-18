@@ -1,0 +1,114 @@
+{
+  "name": "Sentiment Analyzer - Groq LLM",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sentiment",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-trigger",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Preprocess: validate and prepare text\nconst text = $input.first().json.body?.text || $input.first().json.text || '';\n\nif (!text || text.trim().length === 0) {\n  throw new Error('No text provided');\n}\n\n// Approximate token count (1 token ≈ 4 chars)\nconst approxTokens = Math.ceil(text.length / 4);\nconst maxInputTokens = 100000;\n\nlet processedText = text;\nif (approxTokens > maxInputTokens) {\n  processedText = text.substring(0, maxInputTokens * 4);\n}\n\nreturn [{\n  json: {\n    text: processedText,\n    originalLength: text.length,\n    wasTruncated: text.length !== processedText.length\n  }\n}];"
+      },
+      "id": "preprocess",
+      "name": "Preprocess Text",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.groq.com/openai/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer {{ $env.GROQ_API_KEY }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"llama-3.3-70b-versatile\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are an expert sentiment analysis AI for customer service conversations. Analyze conversations in English, Hindi, or Hinglish and return ONLY valid JSON with this exact structure: {\\\"overall_sentiment\\\": \\\"POSITIVE\\\"|\\\"NEGATIVE\\\"|\\\"NEUTRAL\\\", \\\"confidence\\\": 0.0-1.0, \\\"language_detected\\\": \\\"ENGLISH\\\"|\\\"HINDI\\\"|\\\"HINGLISH\\\", \\\"satisfaction_score\\\": 0-100, \\\"urgency_level\\\": \\\"LOW\\\"|\\\"MEDIUM\\\"|\\\"HIGH\\\", \\\"sentiment_trend\\\": \\\"description\\\", \\\"summary\\\": \\\"2-3 sentence summary\\\", \\\"sentences\\\": [{\\\"text\\\": \\\"sentence\\\", \\\"sentiment\\\": \\\"POSITIVE/NEGATIVE/NEUTRAL\\\", \\\"confidence\\\": 0.0-1.0}], \\\"topics\\\": {\\\"Topic_Name\\\": {\\\"sentiment\\\": \\\"POSITIVE/NEGATIVE/NEUTRAL\\\", \\\"mentions\\\": count}}, \\\"emotions\\\": {\\\"joy\\\": 0.0-1.0, \\\"anger\\\": 0.0-1.0, \\\"frustration\\\": 0.0-1.0, \\\"satisfaction\\\": 0.0-1.0, \\\"sadness\\\": 0.0-1.0, \\\"fear\\\": 0.0-1.0}}. For topics, use telecom-relevant categories like Network_Connectivity, Billing, Customer_Support, Installation, Product_Quality, Plan_Pricing. Each sentence should be a dialogue line. Include ALL sentences in the array. Be accurate and concise.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Analyze this conversation:\\n\\n{{ $json.text }}\"\n    }\n  ],\n  \"temperature\": 0.3,\n  \"max_tokens\": 8000,\n  \"response_format\": { \"type\": \"json_object\" }\n}",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "groq-api",
+      "name": "Groq LLM Analysis",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [640, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse Groq's LLM response\nconst response = $input.first().json;\n\ntry {\n  const content = response.choices[0].message.content;\n  const analysis = typeof content === 'string' ? JSON.parse(content) : content;\n  \n  const result = {\n    overall_sentiment: analysis.overall_sentiment || 'NEUTRAL',\n    confidence: analysis.confidence ?? 0.5,\n    language_detected: analysis.language_detected || 'ENGLISH',\n    satisfaction_score: analysis.satisfaction_score ?? 50,\n    urgency_level: analysis.urgency_level || 'LOW',\n    sentiment_trend: analysis.sentiment_trend || 'Stable',\n    summary: analysis.summary || 'Analysis complete',\n    sentences: analysis.sentences || [],\n    topics: analysis.topics || {},\n    emotions: analysis.emotions || {}\n  };\n  \n  return [{ json: result }];\n} catch (error) {\n  return [{\n    json: {\n      error: 'Failed to parse LLM response',\n      message: error.message,\n      overall_sentiment: 'NEUTRAL',\n      confidence: 0,\n      sentences: [],\n      topics: {},\n      emotions: {}\n    }\n  }];\n}"
+      },
+      "id": "parse-response",
+      "name": "Parse & Format",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [840, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "POST, OPTIONS"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "Content-Type"
+              }
+            ]
+          }
+        }
+      },
+      "id": "respond",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1040, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [[{ "node": "Preprocess Text", "type": "main", "index": 0 }]]
+    },
+    "Preprocess Text": {
+      "main": [[{ "node": "Groq LLM Analysis", "type": "main", "index": 0 }]]
+    },
+    "Groq LLM Analysis": {
+      "main": [[{ "node": "Parse & Format", "type": "main", "index": 0 }]]
+    },
+    "Parse & Format": {
+      "main": [[{ "node": "Respond to Webhook", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

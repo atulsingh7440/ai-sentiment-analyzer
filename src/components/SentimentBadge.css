@@ -1,0 +1,72 @@
+.sentiment-badge {
+  border-radius: 12px;
+  padding: 32px;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.sentiment-badge.positive {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.sentiment-badge.negative {
+  background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);
+}
+
+.sentiment-badge.neutral {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.badge-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.emoji {
+  font-size: 72px;
+  line-height: 1;
+}
+
+.sentiment-info .label {
+  font-size: 11px;
+  opacity: 0.85;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.sentiment-value {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.dot {
+  opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  .badge-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .emoji {
+    font-size: 56px;
+  }
+  
+  .sentiment-value {
+    font-size: 30px;
+  }
+}

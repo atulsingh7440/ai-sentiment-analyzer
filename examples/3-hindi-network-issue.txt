@@ -1,0 +1,14 @@
+Customer: Namaste! Mera internet connection kaam nahi kar raha hai. Kal subah se hi network nahi aa raha.
+Support: Namaskar! Mujhe bohot buraai maaf kijiye. Aapka issue check karne deta hoon main.
+Customer: Meri work-from-home meeting kal cancel karni padi kyunki internet nahi tha. Yeh bohot serious issue hai!
+Support: Bilkul, samajhta hoon. Ye network problem bilkul galat time par aaya.
+Customer: Aapke paas customer support ki kya baat! Main pehle hi 3 baar call kiya tha aur koi response nahi mila!
+Support: Main aapkse bahut sorry hoon. Ab direct check karte hain aapka connection.
+Customer: Mera modem toh theek dikhai deta hai. Light bhi green hai. Kya tower mein problem hai?
+Support: Haan, tower mein kuch issue lag raha hai. Ab hum technician bhej rahe hain.
+Customer: Kitne time mein aa jayega? Kal fir se meeting rakhni hai.
+Support: Technician 2 ghante mein aa jayega. Bilkul issue solve kar dega woh.
+Customer: Theek hai. Mere paas kuch aur options hain kya? Kya backup internet le sakta hoon?
+Support: Haan, aap emergency hotspot use kar sakte ho ek second connection se.
+Customer: Achha, isliye to main aapke service se naaraz hoon. Pehle se ye backup option batana chahiye tha!
+Support: Aapki baat bilkul sahi hai. Hum aage se step improve karenke. Sorry again!

@@ -1,0 +1,16 @@
+Customer: Hey! Mujhe simply bolna tha ki aapka new 5G plan absolutely fantastic hai!
+Support: Thank you so much! Bohot happy hoon yeh sunkar!
+Customer: Speed bilkul amazing hai aur coverage bhi badiya. Mumbai ke har jagah mujhe signal mil raha hai.
+Support: We're delighted! 5G rollout ke liye bohot effort lage the. Glad you're experiencing it!
+Customer: Aur haan, customer support bilkul fast tha mera previous issue ke liye. Response time really impressed me!
+Support: That means a lot! We take customer satisfaction very seriously.
+Customer: One suggestion though - aapka mobile app ka interface thoda confusing hai. Billing section ko simplify karo na!
+Support: Great feedback! UI improvement app mein planned hai. Your suggestion definitely help karega!
+Customer: Also, recharge process bilkul smooth hai but kya multiple renewal options add kar sakte ho? Like auto-recharge with different intervals?
+Support: Excellent idea! Hum iska feature request engineering team ko pass kar denke.
+Customer: Plus, loyalty rewards program kuch acha ho sakta hai. Regular customers ko special discounts dena chahiye!
+Support: You're absolutely right. We're working on an enhanced loyalty program actually.
+Customer: Awesome! Overall, bohot satisfied hoon aapke service se. Best network quality aur great customer care!
+Support: Thank you for the wonderful feedback aur suggestions! Customers like you help us improve.
+Customer: Keep it up! Definitely recommend karunga aapko apne friends ko. 5G experience bohot superior hai!
+Support: We truly appreciate your support and loyalty! Thank you so much for choosing us!

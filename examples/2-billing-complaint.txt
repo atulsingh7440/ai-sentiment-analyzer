@@ -1,0 +1,14 @@
+Customer: I need to file a formal complaint about my recent bill. I was charged 3000 rupees for exceeding data limit, but I'm sure I didn't exceed it!
+Support: I sincerely apologize for the billing issue. Let me investigate this immediately for you.
+Customer: This is very frustrating! I have been a loyal customer for 5 years. Last month everything was fine, and suddenly this month I get overcharged.
+Support: I completely understand your frustration. Let me check your usage details carefully.
+Customer: I barely used 45GB out of my 50GB limit. The system is showing 55GB usage, which is impossible. Your metering system must be faulty!
+Support: You're right to be concerned. Let me pull up the detailed usage logs right now.
+Customer: I've checked my phone usage statistics and my own data counter. Nothing matches what you guys are showing. This is poor service!
+Support: I sincerely apologize for this discrepancy. I've found an error in our system. Your actual usage was indeed 45GB.
+Customer: Finally! What are you going to do about this overcharge? I shouldn't be penalized for your system's mistake.
+Support: You're absolutely right. We will immediately refund 3000 rupees to your account. Additionally, I'm adding 10GB free data to your account as compensation.
+Customer: Okay, that's better. I appreciate you investigating this thoroughly. But your system needs urgent fixing. This could happen to other customers too.
+Support: Thank you for bringing this to our attention. We're escalating this to our technical team for immediate resolution. We really value your loyalty.
+Customer: Fine. Just make sure you fix this. I trust you will handle it properly now.
+Support: We will definitely fix this. Your refund will be processed within 48 hours. Thank you for your patience and understanding.

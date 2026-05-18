@@ -1,0 +1,16 @@
+Customer: Hi, I have a serious complaint. My postpaid plan charges bohot zyada ho gaye this month!
+Support: I understand. Let me check your account details right now, aur dekh te hain kya issue hai.
+Customer: Last month 999 rupees tha, aur ab 1599 rupees charge ho gaya! Kya automatic plan change ho gaya?
+Support: Let me check your plan history. Bilkul investigate karenke main.
+Customer: Mera current plan mein 50GB data hona chahiye, lekin charges bilkul same nahi ja rehe. This is not fair!
+Support: I found the issue. Aapka plan September 1st ko automatically upgrade ho gaya because aapne naye features enable kiye the.
+Customer: Auto-upgrade? Yeh to mujhe pehle se bataya jaana chahiye tha! Mujhe ye upgrade nahi chahiye!
+Support: Bilkul aapki point valid hai. We should have sent you a confirmation before upgrading. I sincerely apologize.
+Customer: Toh ab kya karenke? Refund karoge ya simply downgrade kar doge plan ko?
+Support: Hum dono options de sakte hain. Aap chahein toh full refund le sakte ho, ya back to original plan chalate hain.
+Customer: Downgrade kar do back to original. Par ek baat samjha do - kyu notification nahi tha?
+Support: Bilkul fair question hai. Our notification system mein glitch tha. Hum usmein fix kar rahe hain abhi.
+Customer: Okay, fine. Downgrade kar do aur zyada careful raho next time with automatic plan changes!
+Support: Definitely karenke! Aapka plan immediately downgrade ho gaya aur next bill mein original rate aayega.
+Customer: Alright. Appreciate aapki understanding. Hopefully aage se better experience hoga.
+Support: Thank you for your patience and feedback. Your loyalty means everything to us. We'll do better!
