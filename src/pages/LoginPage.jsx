@@ -14,7 +14,7 @@ export default function LoginPage({ onLogin }) {
     <div className="login-container">
       <div className="login-card">
         <h1>📊 Sentiment Analyzer</h1>
-        <p className="subtitle">AI-powered conversation analysis</p>
+        <p className="subtitle">AI-powered Conversation Sentiment Analysis Platform</p>
         <p className="languages">Supports: English • Hindi • Hinglish</p>
         
         <form onSubmit={handleSubmit}>
@@ -24,7 +24,7 @@ export default function LoginPage({ onLogin }) {
               type="text" 
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              placeholder="admin"
+              placeholder="Enter username"
               autoComplete="username"
             />
           </div>
@@ -35,7 +35,7 @@ export default function LoginPage({ onLogin }) {
               type="password" 
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="admin"
+              placeholder="Enter password"
               autoComplete="current-password"
             />
           </div>
