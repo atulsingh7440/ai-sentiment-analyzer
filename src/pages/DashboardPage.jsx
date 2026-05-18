@@ -59,7 +59,6 @@ export default function DashboardPage({ onLogout }) {
           <div className="loading-card">
             <div className="spinner"></div>
             <p>Analyzing conversation with AI...</p>
-            <small>Processing with Groq LLM</small>
           </div>
         )}
 
