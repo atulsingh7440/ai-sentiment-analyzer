@@ -1,41 +1,27 @@
+<div align="center">
+
 # 📊 Sentiment Analyzer
 
-> AI-powered sentiment analysis for customer conversations in **English, Hindi, and Hinglish**
+### AI-powered sentiment analysis for customer conversations
 
-Production-ready full-stack web application analyzing conversation transcripts using **Groq LLM (Llama 3.3 70B)** with clean architecture (UI → n8n → AI).
+**English · Hindi · Hinglish**
 
-![Tech](https://img.shields.io/badge/React-18-blue) ![Tech](https://img.shields.io/badge/n8n-Workflow-orange) ![Tech](https://img.shields.io/badge/Groq-Llama_3.3-green) ![License](https://img.shields.io/badge/License-MIT-yellow)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![n8n](https://img.shields.io/badge/n8n-Workflow-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)](https://n8n.io)
+[![Groq](https://img.shields.io/badge/Groq-Llama_3.3_70B-F55036?style=for-the-badge)](https://groq.com)
+[![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://netlify.com)
+[![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
----
+[🔗 Live Demo](https://your-app.netlify.app) · [📁 Examples](#-testing) · [🚀 Deploy Guide](#-live-deployment-guide)
 
-## 🌐 Live Demo
-
-🔗 **App:** https://your-app.netlify.app (deploy following guide below)
-
-**Login:** `admin` / `admin`
-
-Upload any file from `examples/` folder to test.
-
----
-
-## ✨ Features
-
-- 🔐 Login authentication (basic auth)
-- 📁 File upload (`.txt`, up to **500KB / ~50 pages**)
-- 🧠 AI analysis powered by Groq Llama 3.3 70B
-- 🌍 Multilingual: English, Hindi, Hinglish
-- 📊 Interactive charts (pie, bar, line)
-- 💭 Emotion detection (6 emotions)
-- 📌 Topic extraction with sentiment
-- 📈 KPIs: urgency, satisfaction, trend
-- 📝 Auto-generated summary
-- 🔢 Pagination for large conversations
-- 🎚️ Sentiment filter tabs
-- 📱 Fully responsive design
+</div>
 
 ---
 
-## 🏗️ Architecture
+## 🌟 Overview
+
+A production-ready full-stack web application that analyzes conversation transcripts using **Groq LLM (Llama 3.3 70B)**. Built with a clean, decoupled architecture:
 
 ```
 ┌─────────────┐      ┌──────────────┐      ┌──────────────┐
@@ -46,86 +32,106 @@ Upload any file from `examples/` folder to test.
        └────────────── JSON Response ◀──────────────┘
 ```
 
-**Clean separation:**
-- **UI** → Renders dashboard
-- **n8n** → Orchestrates API calls
-- **Groq** → AI analysis
+> **Login:** `admin` / `admin` — Upload any file from `examples/` folder to test.
+
+---
+
+## ✨ Features
+
+| Category | Features |
+|---|---|
+| 🔐 **Auth** | Basic login authentication |
+| 📁 **Input** | `.txt` file upload up to **500KB (~50 pages)** |
+| 🧠 **AI Engine** | Groq Llama 3.3 70B (128K context window) |
+| 🌍 **Languages** | English, Hindi, Hinglish |
+| 📊 **Charts** | Interactive pie, bar & line visualizations |
+| 💭 **Emotions** | 6-emotion detection (joy, anger, fear, sadness, satisfaction, frustration) |
+| 📌 **Topics** | Automatic topic extraction with per-topic sentiment |
+| 📈 **KPIs** | Urgency level · Satisfaction score · Sentiment trend |
+| 📝 **Summary** | Auto-generated conversation summary |
+| 🔢 **UX** | Pagination (25/page) + sentiment filter tabs |
+| 📱 **Design** | Fully responsive |
 
 ---
 
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
-| Frontend | React 18 + Vite |
-| Charts | Recharts |
-| Backend | n8n (workflow automation) |
-| AI | Groq API (Llama 3.3 70B) |
-| Hosting (Frontend) | Netlify |
-| Hosting (Backend) | n8n Cloud |
+|---|---|
+| **Frontend** | React 18 + Vite |
+| **Charts** | Recharts |
+| **Backend / Orchestration** | n8n (workflow automation) |
+| **AI Model** | Groq API — Llama 3.3 70B |
+| **Hosting (Frontend)** | Netlify |
+| **Hosting (Backend)** | n8n Cloud |
 
 ---
 
 ## 🚀 Live Deployment Guide
 
-Follow these steps to deploy a **live, shareable web app**.
+### Step 1 — Setup Groq API *(Free)*
 
-### Step 1: Setup Groq API (Free)
+1. Go to [console.groq.com/keys](https://console.groq.com/keys)
+2. Sign up — no credit card required
+3. Create an API key → copy it (starts with `gsk_...`)
 
-1. Go to https://console.groq.com/keys
-2. Sign up (free, no credit card)
-3. Create API key → Copy it (starts with `gsk_...`)
+---
 
-### Step 2: Deploy Backend on n8n Cloud (Free)
+### Step 2 — Deploy Backend on n8n Cloud *(Free)*
 
-1. Sign up at https://app.n8n.cloud (free tier)
+1. Sign up at [app.n8n.cloud](https://app.n8n.cloud) (free tier)
 2. Click **Workflows → Import from File**
 3. Upload `n8n/workflow.json`
-4. Add Groq API key:
-   - **Settings → Variables → Add Variable**
-   - Name: `GROQ_API_KEY`
-   - Value: `gsk_your_key_here`
-5. Click **Activate** (toggle in top right)
-6. Click the **Webhook** node → Copy **Production URL**
-   - Format: `https://your-workspace.app.n8n.cloud/webhook/sentiment`
+4. Add your Groq API key:
+   - Navigate to **Settings → Variables → Add Variable**
+   - **Name:** `GROQ_API_KEY`
+   - **Value:** `gsk_your_key_here`
+5. Click **Activate** (toggle in the top right)
+6. Click the **Webhook** node → copy the **Production URL**
+   > Format: `https://your-workspace.app.n8n.cloud/webhook/sentiment`
 
-### Step 3: Deploy Frontend on Netlify (Free)
+---
 
-**Option A: Drag & Drop (Fastest)**
+### Step 3 — Deploy Frontend on Netlify *(Free)*
+
+**Option A — Drag & Drop (Fastest)**
 
 ```bash
-# Local build
 npm install
 npm run build
 ```
 
-1. Go to https://app.netlify.com/drop
-2. Drag the `dist/` folder
-3. Get instant URL: `https://random-name.netlify.app`
-4. Go to **Site settings → Environment variables**
-5. Add: `VITE_N8N_WEBHOOK_URL` = your n8n webhook URL
-6. Trigger redeploy
+1. Go to [app.netlify.com/drop](https://app.netlify.com/drop)
+2. Drag the `dist/` folder onto the page
+3. Get your instant URL: `https://random-name.netlify.app`
+4. Go to **Site settings → Environment variables** and add:
+   ```
+   VITE_N8N_WEBHOOK_URL = <your n8n webhook URL>
+   ```
+5. Trigger a redeploy
 
-**Option B: Connect GitHub (Recommended for Updates)**
+**Option B — Connect GitHub *(Recommended for ongoing updates)***
 
-1. Push code to GitHub
+1. Push this repo to GitHub
 2. On Netlify: **Add new site → Import from Git**
-3. Select your repo
+3. Select your repository
 4. Build settings (auto-detected):
-   - Build command: `npm run build`
-   - Publish directory: `dist`
+
+   | Setting | Value |
+   |---|---|
+   | Build command | `npm run build` |
+   | Publish directory | `dist` |
+
 5. Add environment variable: `VITE_N8N_WEBHOOK_URL`
-6. Deploy
+6. Click **Deploy**
 
-### Step 4: Share Your Live App
+---
 
-🎉 Your app is live at: `https://your-app.netlify.app`
+### Step 4 — Share 🎉
 
-**Share this URL** for testing. Evaluators only need:
-- Browser
-- The URL
-- Login: `admin/admin`
-- Sample `.txt` file (or use examples)
+Your app is live at `https://your-app.netlify.app`
+
+Share the URL — evaluators only need a browser, login credentials (`admin/admin`), and a sample `.txt` file.
 
 ---
 
@@ -137,15 +143,15 @@ git clone https://github.com/your-username/sentiment-analyzer.git
 cd sentiment-analyzer
 npm install
 
-# 2. Configure
+# 2. Configure environment
 cp .env.example .env
-# Edit .env with your n8n webhook URL
+# Edit .env — add your n8n webhook URL
 
-# 3. Run
+# 3. Start dev server
 npm run dev
 ```
 
-Visit http://localhost:3000
+Visit [http://localhost:3000](http://localhost:3000)
 
 ---
 
@@ -154,24 +160,24 @@ Visit http://localhost:3000
 ```
 sentiment-analyzer/
 ├── src/
-│   ├── App.jsx                       # Root component
-│   ├── main.jsx                      # Entry point
-│   ├── index.css                     # Global styles
+│   ├── App.jsx                        # Root component
+│   ├── main.jsx                       # Entry point
+│   ├── index.css                      # Global styles
 │   ├── pages/
-│   │   ├── LoginPage.jsx             # Authentication
-│   │   └── DashboardPage.jsx         # Main dashboard
+│   │   ├── LoginPage.jsx              # Authentication
+│   │   └── DashboardPage.jsx          # Main dashboard
 │   └── components/
-│       ├── FileUpload.jsx            # File upload UI
-│       ├── ResultsDashboard.jsx      # Results orchestrator
-│       ├── SentimentBadge.jsx        # Overall sentiment
-│       ├── SentenceBreakdown.jsx     # Paginated sentence list
-│       ├── TopicSentiment.jsx        # Topic breakdown
-│       ├── EmotionDetection.jsx      # Emotion bars
-│       ├── Charts.jsx                # Visualizations
-│       └── ConversationSummary.jsx   # Summary & KPIs
+│       ├── FileUpload.jsx             # File upload UI
+│       ├── ResultsDashboard.jsx       # Results orchestrator
+│       ├── SentimentBadge.jsx         # Overall sentiment
+│       ├── SentenceBreakdown.jsx      # Paginated sentence list
+│       ├── TopicSentiment.jsx         # Topic breakdown
+│       ├── EmotionDetection.jsx       # Emotion bars
+│       ├── Charts.jsx                 # Visualizations
+│       └── ConversationSummary.jsx    # Summary & KPIs
 ├── n8n/
-│   └── workflow.json                 # n8n workflow (import this)
-├── examples/                         # Sample conversations
+│   └── workflow.json                  # n8n workflow (import this)
+├── examples/                          # Sample conversations
 │   ├── 1-telecom-positive.txt
 │   ├── 2-billing-complaint.txt
 │   ├── 3-hindi-network-issue.txt
@@ -190,20 +196,18 @@ sentiment-analyzer/
 
 ## 📏 Large File Handling
 
-The app efficiently handles conversations up to **~50 pages**:
-
 | File Size | Approx. Pages | Handling |
-|-----------|---------------|----------|
-| < 200KB | < 20 pages | Direct processing |
-| 200-500KB | 20-50 pages | Direct processing + pagination UI |
-| > 500KB | > 50 pages | Rejected (frontend validation) |
+|---|---|---|
+| < 200 KB | < 20 pages | Direct processing |
+| 200 – 500 KB | 20 – 50 pages | Direct processing + pagination UI |
+| > 500 KB | > 50 pages | ❌ Rejected (frontend validation) |
 
-**Optimizations for large files:**
-- Frontend pagination (25 sentences per page)
-- Sentiment filter tabs (focus on positive/negative)
-- Backend pre-processing (token limit safety)
-- Groq's Llama 3.3 70B has 128K context (handles full input)
-- Charts aggregate data (always performant)
+**Optimizations:**
+- Frontend pagination — 25 sentences per page
+- Sentiment filter tabs for focused review
+- Backend pre-processing with token limit safety
+- Groq Llama 3.3 70B supports a 128K context window
+- Charts always aggregate data for smooth performance
 
 ---
 
@@ -227,15 +231,15 @@ The app efficiently handles conversations up to **~50 pages**:
   ],
   "topics": {
     "Network_Connectivity": { "sentiment": "POSITIVE", "mentions": 3 },
-    "Customer_Support": { "sentiment": "POSITIVE", "mentions": 2 }
+    "Customer_Support":     { "sentiment": "POSITIVE", "mentions": 2 }
   },
   "emotions": {
-    "joy": 0.85,
-    "anger": 0.05,
-    "frustration": 0.10,
+    "joy":          0.85,
+    "anger":        0.05,
+    "frustration":  0.10,
     "satisfaction": 0.90,
-    "sadness": 0.02,
-    "fear": 0.01
+    "sadness":      0.02,
+    "fear":         0.01
   }
 }
 ```
@@ -244,56 +248,49 @@ The app efficiently handles conversations up to **~50 pages**:
 
 ## 🧪 Testing
 
-5 sample conversations provided in `examples/`:
+Five sample conversations are provided in `examples/`:
 
 | File | Language | Scenario |
-|------|----------|----------|
+|---|---|---|
 | `1-telecom-positive.txt` | English | Happy customer feedback |
 | `2-billing-complaint.txt` | English | Resolved billing dispute |
 | `3-hindi-network-issue.txt` | Hindi | Network outage complaint |
 | `4-hinglish-plan-issue.txt` | Hinglish | Plan change dispute |
-| `5-hinglish-positive.txt` | Hinglish | Positive with suggestions |
+| `5-hinglish-positive.txt` | Hinglish | Positive feedback with suggestions |
 
 ---
 
 ## 🔧 Troubleshooting
 
-**"n8n webhook URL not configured"**
-→ Set `VITE_N8N_WEBHOOK_URL` in `.env` (local) or Netlify environment variables (deployed)
-
-**"Server returned 500"**
-→ Check `GROQ_API_KEY` is set in n8n environment variables
-
-**"Server returned 404"**
-→ Make sure n8n workflow is **activated** (toggle on)
-
-**"CORS error"**
-→ Workflow JSON includes CORS headers; re-import if you see this
-
-**"File too large" error**
-→ Max 500KB. Split larger files or trim conversation
-
-**Port 3000 in use**
-→ Run `npm run dev -- --port 3001`
+| Error | Fix |
+|---|---|
+| `"n8n webhook URL not configured"` | Set `VITE_N8N_WEBHOOK_URL` in `.env` (local) or Netlify environment variables |
+| `"Server returned 500"` | Verify `GROQ_API_KEY` is set in n8n environment variables |
+| `"Server returned 404"` | Make sure the n8n workflow is **activated** |
+| `"CORS error"` | Re-import `workflow.json` — it includes the required CORS headers |
+| `"File too large"` | Max 500 KB. Split the file or trim the conversation |
+| Port 3000 in use | Run `npm run dev -- --port 3001` |
 
 ---
 
-## 📦 Build for Production
+## 📦 Production Build
 
 ```bash
-npm run build       # Creates optimized dist/ folder
-npm run preview     # Preview production build locally
+npm run build      # Creates optimized dist/ folder
+npm run preview    # Preview the production build locally
 ```
 
-The `dist/` folder is ready to deploy on any static host (Netlify, Vercel, S3, etc.)
+The `dist/` folder is ready to deploy on any static host — Netlify, Vercel, S3, GitHub Pages, etc.
 
 ---
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) file
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
+
+<div align="center">
 
 ## 👤 Author
 
@@ -303,6 +300,6 @@ Built as a demonstration of full-stack AI engineering with modern tools.
 
 ---
 
-**Made with ❤️ using React, n8n, and Groq**
-#   a i - s e n t i m e n t - a n a l y z e r  
- 
+*Made with ❤️ using React, n8n, and Groq*
+
+</div>
