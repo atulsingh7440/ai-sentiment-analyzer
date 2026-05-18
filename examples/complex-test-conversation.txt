@@ -1,0 +1,101 @@
+Customer: Hello? Is anyone there? I have been on hold for 45 minutes!
+Support: I sincerely apologize for the long wait. Thank you for your patience.
+Customer: Patience my foot! This is the third time I am calling this week!
+Support: I completely understand your frustration. Let me pull up your account.
+Customer: Yeh kya bakwaas hai? Mera internet 5 din se kaam nahi kar raha aur tum log kuch nahi kar rahe!
+Support: Bilkul, main check karta hoon abhi.
+Customer: What the hell is going on with your company? Network down, billing wrong, customer service worst!
+Support: I'm truly sorry for all these issues. Let me address them one by one.
+Customer: Damn right you better! I pay 2000 rupees per month for this useless service!
+Support: I see your account here. Yes, there have been network issues in your area.
+Customer: Network issues? Bullsh*t! My neighbor uses different provider and his works perfectly!
+Support: I understand. Let me check the tower status in your locality.
+Customer: Pehle bhi check kiya tha tumhare team ne. Bola tha 24 hours mein theek ho jayega.
+Support: I see the previous tickets. Yes, we promised 24 hours and failed to deliver.
+Customer: Failed? You guys are completely incompetent! My work is suffering because of you!
+Support: I take full responsibility for this. We will escalate this immediately.
+Customer: Escalate kya? Yeh sab tum log roz bolte ho. Empty promises, nothing else!
+Support: This time I personally guarantee it will be resolved within 4 hours.
+Customer: Guarantee my a**! Last time also same guarantee diya tha aur kuch nahi hua!
+Support: I sincerely apologize for the broken promises. I'll send a technician right now.
+Customer: Achha, ab sun. Mere bill mein bhi galti hai. Why am I charged 3500 instead of 2000?
+Support: Let me check your billing details. One moment please.
+Customer: One moment ek ghante ka hota hai tumhare paas! Just check it fast!
+Support: I see extra charges for international roaming. Did you travel recently?
+Customer: International roaming? Are you kidding me? Maine kabhi pichle 3 saal mein bhi country nahi chhoda!
+Support: That's strange. Let me investigate this billing error.
+Customer: Investigate kya, ye theft hai! Tum log paise loot rahe ho customers se!
+Support: You're absolutely right to be upset. This appears to be a system error.
+Customer: System error? Bahanon mein expert ho tum log! Real solutions kabhi nahi dete!
+Support: I will reverse all the wrong charges right now. Refund will be processed.
+Customer: Wait wait wait. Phele yeh batao agar aaj solve nahi hua toh kya hoga?
+Support: If not resolved today, I will personally call you tomorrow morning.
+Customer: Personally? Tumhara naam kya hai actually? Mujhe complaint karni hai ab.
+Support: My name is Rajesh. I'll provide my employee ID for your reference.
+Customer: Achha Rajesh, sun. Tumhara senior manager kaun hai? I want to speak to him!
+Support: I can transfer you to my supervisor. But please give me one more chance.
+Customer: Chance? Tumhe 50 chances diye hain ab tak! Manager se baat karwao!
+Support: Sir, please. Let me try to solve this. Transferring to a manager will take 30 more minutes.
+Customer: F**k it, just solve it then! But this is your absolute last chance!
+Support: I understand. Technician will arrive in 2 hours. Refund will reflect in 48 hours.
+Customer: 48 hours? Yaar paisa toh aaj loot liya, refund mein 48 ghante? Yeh kya logic hai?
+Support: It's our standard processing time. I can try to expedite to 24 hours.
+Customer: Expedite kya? Tumhare paas magical buttons hain kya? Just do it!
+Support: Done. I've marked it as urgent. Should reflect within 24 hours.
+Customer: Achha, ab ek aur problem batata hoon. Mera mobile app bhi kaam nahi karta theek se.
+Support: Which app? Our customer service app?
+Customer: Haan, woh hi. Login karta hoon toh "session expired" bolta hai. WTF is this?
+Support: Yes, we're aware of this bug. Updated version is releasing this Friday.
+Customer: Friday? Aaj Monday hai! Tab tak main kaise pay karu, kaise track karu?
+Support: You can use the web portal in the meantime, or call our IVR system.
+Customer: IVR system se main pagal ho jata hoon! Press 1, press 2, press 9, press star...
+Support: I understand the frustration with automated systems.
+Customer: Frustrating nahi, criminal hai! Customer ko itni complications kyu deni padti hain?
+Support: We're working on simplifying our processes based on customer feedback.
+Customer: Customer feedback? Mera bhi feedback hai - apni puri company band karo!
+Support: I hope we can change your opinion through better service.
+Customer: Achha ek aur cheez. Mere brother ka number bhi same company se hai.
+Support: Yes, I can see family plans. How can I help with that?
+Customer: Uska bhi same problem hai. Network nahi, app broken, bill galat. Same garbage!
+Support: I'm sorry to hear that. We can address his issues too if you'd like.
+Customer: Address kya? Pehle mera toh address kar lo theek se!
+Support: You're absolutely right. Let me focus on your case first.
+Customer: Ek aur cheez. Tumhari company ki ads dekho TV pe - "Best network in India"!
+Support: Yes, our marketing message is around quality service.
+Customer: Quality? This is the absolute worst service I have EVER experienced! 
+Support: I sincerely apologize for not meeting your expectations.
+Customer: Expectations? Mere expectations toh ye hain ki basic service mile! Internet chale, bill sahi aaye!
+Support: You're 100% right. These are basic requirements we should meet.
+Customer: But you guys can't even do that! Toh fancy ads kyu bana rahe ho?
+Support: I'll pass on your feedback to the management.
+Customer: Pass karenge feedback? Yaar tum log sab kuch "pass" karte ho, kuch karte nahi!
+Support: I understand your skepticism. Please give us one chance to redeem.
+Customer: Redeem? Yeh credit card nahi hai bhai! Mera time aur paisa wapas nahi aayega!
+Support: I empathize completely. Compensation will be processed in your next bill.
+Customer: Compensation? Kitna? 100 rupees? That's like an insult after 5 days of no internet!
+Support: We will credit 500 rupees and one month free service.
+Customer: 500 rupees? 5 din ka loss mera 5000 rupees ka business hai!
+Support: I understand the loss is much higher. Let me check with my manager for more.
+Customer: Yeah, finally something useful! Manager se baat karwao!
+Support: Manager has approved 2000 rupees credit and 2 months free service.
+Customer: 2000? Acha thoda better hai. Aur 2 mahine free? Theek hai, but technician aaj aana chahiye!
+Support: Confirmed. Technician dispatched. Will reach you in 90 minutes.
+Customer: 90 minutes? Tumne pehle 2 hours bola tha! Now it's 90? Konsa sach hai?
+Support: We expedited it after manager's approval. Now it's 90 minutes.
+Customer: Hmm okay. Tum logon ke ek baar hi sahi baat manni chahiye thi.
+Support: You're right. I should have escalated earlier. My apologies.
+Customer: Yaar tumhari Hindi acchi hai. Tum north Indian ho kya?
+Support: Yes sir, I'm from Lucknow originally.
+Customer: Achha! Lucknow ka biryani khaya hai mainne. Mast lagta hai!
+Support: Hahaha, glad you enjoyed it sir!
+Customer: Dekh, technician time pe aaye, refund 24 hours mein aaye, toh fine. Otherwise main consumer court mein jaunga!
+Support: Absolutely understood. Everything will happen as promised.
+Customer: Promise toh tumne kar diya. Let's see if your company can actually keep them.
+Support: I'll personally follow up with you tomorrow to ensure satisfaction.
+Customer: Personally follow up? You really mean it Rajesh?
+Support: 100%. I'll call you at 11 AM tomorrow.
+Customer: Theek hai bhai. Dekh agar sab theek ho gaya, toh main tumhare bare mein achha review likhunga.
+Support: That would mean a lot. Thank you for your patience today.
+Customer: Patience tumne earn ki hai, give me solutions and you'll have my respect.
+Support: I will. Thank you sir. Have a wonderful day.
+Customer: Wonderful day depends on your technician. Bye.
