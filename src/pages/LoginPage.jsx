@@ -43,7 +43,7 @@ export default function LoginPage({ onLogin }) {
           <button type="submit" className="btn-login">Sign In</button>
         </form>
         
-        <p className="demo-hint">Demo credentials: admin / admin</p>
+        
       </div>
     </div>
   )
