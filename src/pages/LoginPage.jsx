@@ -13,7 +13,7 @@ export default function LoginPage({ onLogin }) {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h1>📊 Sentiment Analyzer</h1>
+        <h1>AI-Sentiment Analyzer</h1>
         <p className="subtitle">AI-powered Conversation Sentiment Analysis Platform</p>
         <p className="languages">Supports: English • Hindi • Hinglish</p>
         
